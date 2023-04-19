@@ -1,11 +1,59 @@
 html {
     font-size: 62.5%;
 }
-* { 
+
+* {
     box-sizing: border-box;
 }
+
 body {
     background: #CBE1F1;
     font-family: "Nunito";
     margin: 3em;
+}
+
+div.user-container {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    height: 7.4em;
+    max-width: 32.5em;
+    min-width: 22.9em;
+    border-radius: 3.7em;
+    padding-right: 2.5em;
+    justify-content: space-between;
+}
+
+div.image-and-name {
+    display: flex;
+    align-items: center;
+    padding: 1.1em;
+
+}
+
+.user-name {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Nunito';
+    margin-left: 1.8rem;
+}
+
+div.circle {
+    width: 5.2em;
+    height: 5.2em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar {
+    width: 5.2em;
+    margin-top: -0.3em;
+}
+
+button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #5DBC3C;
 }
