@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    margin: 0 6.7em;
+    margin: 0;
     background: #FCF5EB;
     font-family: "Poppins";
 }
@@ -14,7 +14,7 @@ h1 {
 
 h1.mainhead {
     font-size: 4.4rem;
-    margin-top: 5em;
+    margin-top: 2em;
     position: relative;
 }
 
@@ -24,18 +24,20 @@ h1.mainhead::before {
     top: -13rem;
     left: -8rem;
     font-size: 30rem;
-    color: rgba(0,0,0,0.05);
+    color: rgba(0, 0, 0, 0.05);
     pointer-events: none;
     z-index: -1;
 }
 
 main {
-    margin: 5em;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2.4em;
 }
 
 section {
     display: flex;
-    gap: 5.7em;
+    flex-direction: column;
     border-top: 1px solid black;
 }
 
@@ -47,3 +49,27 @@ p {
     font-size: 1.4rem;
 }
 
+@media screen and (min-width: 600px) {
+    section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 3em;
+    }
+
+    article {
+        flex: 1;
+    }
+
+    .first {
+        flex-basis: 100%;
+    }
+
+}
+
+@media screen and (min-width:  900px) {
+   
+    .first {
+        flex-basis: 0 ;
+    }
+
+}
