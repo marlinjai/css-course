@@ -20,10 +20,12 @@ header {
     margin: 0 auto;
 
 }
-.open-btn{
+
+.open-btn {
     width: 3rem;
     cursor: pointer;
 }
+
 nav {
     position: fixed;
     top: 0;
@@ -33,14 +35,17 @@ nav {
     height: 100vh;
     padding: 4.6em;
     box-sizing: border-box;
+    transition: right .5s ease-in-out;
 }
-.close-btn{
+
+.close-btn {
     cursor: pointer;
     display: block;
     width: 3rem;
     margin-left: auto;
     margin-bottom: 6.6rem;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -98,9 +103,33 @@ a.cart p {
 a.cart:hover {
     background-color: #B5C0CE;
 }
+
 .mobile-cart-menu {
     display: flex;
     align-items: center;
     gap: 2em;
+
+}
+
+.open {
+    right: 0%;
+}
+
+@media screen and (min-width: 600px) {
+
+    .open-btn,
+    .close-btn {
+        display: none;
+    }
+    nav{
+        position: unset;
+        height: auto;
+        background: none;
+        padding: 0;
+        width: auto;
+    }
+    ul{
+        flex-direction: row;
+    }
 
 }

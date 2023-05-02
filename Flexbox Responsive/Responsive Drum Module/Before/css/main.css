@@ -14,7 +14,7 @@ body {
 }
 .wrapper {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 10em auto;
 }
 section {
     background: white;
@@ -71,7 +71,7 @@ a.cta p {
 }
 
 .box {
-    width: calc(50% - 2em);
+    width: calc(50% - 1.4 em);
     aspect-ratio: 1/1;
     gap: 1em;
     border-radius: .6em;
@@ -99,10 +99,14 @@ a.cta p {
     background-color: #BBC8E1;
 }
 
+
+.wrapperII{
+    margin: 0em 5em;
+}
+
+
 @media screen and (min-width: 800px) {
-    .wrapper {
-        margin: 10em auto;
-    }
+    
 
     .hide-mobile {
         display: block;
@@ -115,5 +119,9 @@ a.cta p {
 @media screen and (min-width: 1200px) {
     section {
         flex-direction: row;
+    }
+
+    .wrapper {
+        margin: 10em auto;
     }
 }
