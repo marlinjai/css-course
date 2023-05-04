@@ -196,6 +196,10 @@ main {
         margin: 0.42em 0em 0.21em 0em;
     }
 
+    h2{
+        margin: .3em 0em .3em;
+    }
+
     main{
         max-width: 90vw;
         flex-wrap: nowrap;
@@ -205,8 +209,12 @@ main {
     .container2,
     .container3{
         flex-basis: 33%;
+        margin: 0;
     }
 
+    .icon1, .icon2, .icon3{
+        height: 3.5em;
+    }
     main p {
         font-size: 1.8em;
         text-align: left;
