@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #DBF3E3;
+    font-family: 'Open sans', sans-serif;
+    height: 100vh;
+}
+
+section{
+    margin: 20em auto;
+    display: grid;
+    gap: 2.5em;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: 2fr 1fr 1fr;
+    width: 94em;
+    height: 56.9em;
+    grid-template-areas: 
+    "box1 box2 rocket"
+    "box1 space rocket"
+    "sky space rocket";
+}
+
+img{
+    position: relative;
+    z-index: -1;
+    border-radius: 1em;
+}
+.box1{
+    grid-area: box1;
+}
+.text-wrapper{
+    z-index: 1;
+    background: white;
+    padding: 2.9em 2.5em;
+    height: 14.25em;
+    margin-top: -14.25em;
+    border-radius: 0em 0em 1em 1em;
+}
+.box2{
+    grid-area: box2;
+    background: #33A559;
+    color: white;
+    padding: 3.6em 4.2em 3.1em 3.8em;
+}
+
+.box2 p {
+    font-family: 'consolas';
+    font-weight: 300;
+    line-height: 147.1%;
+    font-size: 1.8rem;
+}
+
+.box3{
+    grid-area: rocket;
+}
+.box4{
+    grid-area: sky;
+}
+.box5{
+    grid-area: space;
+    color: #79BA8F;
+    background: #AFDDBE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3.6rem;
+    font-weight: 400;
+    margin: 0;
+    padding-bottom: 0.27em;
+    letter-spacing: 0.06em;
+}
+h2{
+    margin: 0;
+    font-size: 2.6rem;
+    font-family: 'consolas';
+    font-weight: bold;
+    letter-spacing: 0.03em;
+
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    
+}
+p{
+    font-size: 1.8rem;
+}
+.text-wrapper p {
+    font-size: 1.6rem;
+    margin: .7em 0em;
+    line-height: 1.5em;
+}
+
+section > div {
+    border-radius: 1em;
+}

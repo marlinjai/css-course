@@ -1,0 +1,90 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #CED5E1;
+    font-family: 'Inter';
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    background: #EAEEF4;
+    display: grid;
+    grid-template-areas:
+        "avatar avatar ."
+        ". . .";
+    gap: 2.5em;
+    width: 70.6em;
+    padding: 2.6em 2.2em 4.2em;
+    border-radius: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 1em 1em 6em rgba(0, 0, 0, 0.3);
+}
+
+img {
+    width: 4.8em;
+    height: 4.8em;
+}
+
+.avatar-name {
+    grid-area: avatar;
+    display: flex;
+    gap: 1.8em;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 1em;
+    padding: 3.5em 2.8em;
+
+}
+
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1em;
+    margin: 2em 0em 0em;
+}
+
+p {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+button {
+    background: #00CC6A;
+    border-radius: 1em;
+    height: 1.65em;
+    width: 1.65em;
+    border: none;
+    padding: 0;
+}
+
+.active-days {
+    margin: 0em 4em;
+}
+
+h3 {
+    font-size: 2.2rem;
+    color: #0E53CA;
+    font-weight: bold;
+    font-family: 'Inter';
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin: .2em 0em;
+}

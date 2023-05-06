@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    overflow-y: hidden;
 }
 
 body {
@@ -8,3 +9,51 @@ body {
     background: #1F1F1F;
 }
 
+.gallery {
+    max-width: 1200px;
+    margin: 7em auto;
+    height: 513px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 40% 1fr;
+}
+
+.item {
+    background-size: cover;
+}
+
+.item:nth-of-type(1) {
+    background-image: url('..//assets/car1.jpg');
+    background-position-y: -3em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item:nth-of-type(2) {
+    background-image: url('..//assets/car2.jpg');
+    background-position: center;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item:nth-of-type(3) {
+    background-image: url('..//assets/car3.jpg');
+background-position-y: -29em;
+grid-column-start: 5;
+    grid-column-end: 7;
+
+}
+
+.item:nth-of-type(4) {
+    background-image: url('..//assets/car4.jpg');
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-position-y: -4em;
+}
+
+.item:nth-of-type(5) {
+    background-image: url('..//assets/car5.jpg');
+    background-position-y: -3em;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
