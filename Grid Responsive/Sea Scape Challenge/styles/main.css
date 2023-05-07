@@ -1,0 +1,174 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter';
+    margin: 0;
+    overflow-x: hidden;
+    background: #F0C5AD;
+
+}
+
+.section-wrapper {
+    overflow-x: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+section {
+    margin: 4em;
+    max-width: 66.6em;
+    max-height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .7fr 0.5fr 1fr 1.3fr 1.5fr;
+    grid-template-areas:
+        "wrapper wrapper"
+        "h1 h1"
+        "text-wrapper text-wrapper"
+        "moon moon"
+        "sky city";
+    gap: .2em;
+}
+
+.textbox-wrapper {
+    grid-area: wrapper;
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.textbox-wrapper div {
+    flex-basis: 32%;
+}
+
+.text-wrapper p {
+    margin: 0;
+    line-height: 144%;
+}
+
+h1 {
+    grid-area: h1;
+    font-size: clamp(2.6em, 13.5vw, 7rem);
+    font-weight: bold;
+    margin: 0;
+    align-self: center;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.text-wrapper {
+    grid-area: text-wrapper;
+    display: flex;
+    gap: 3.6em;
+    padding: 1.2em 0em;
+    /* max-width: 47.2em; */
+}
+
+
+
+.image1 {
+    grid-area: moon;
+    background-image: url(../assets/Rectangle\ 4.png);
+    background-position-x: center;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.image2 {
+    background-image: url(../assets/Rectangle\ 2.png);
+    width: 100%;
+    background-size: cover;
+    grid-area: sky;
+}
+
+.image3 {
+    background-image: url(../assets/Rectangle\ 3.png);
+    width: 100%;
+    background-size: cover;
+    grid-area: city;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    section {
+        max-width: 88.5em;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 20% 12% 25% 30%;
+        grid-template-areas:
+            "wrapper wrapper wrapper"
+            "moon h1 h1"
+            "moon text-wrapper text-wrapper"
+            "moon sky city";
+        min-height: 50em;
+    }
+
+    .textbox-wrapper {
+        align-self: center;
+        justify-self: center;
+        gap: 1em;
+    }
+
+    .textbox-wrapper div {
+        padding: 3.5em;
+    }
+
+    h1 {
+        justify-self: center;
+        font-size: clamp(2.6em, 13.5vw, 9.8rem);
+        margin-left: 29px;
+    }
+
+    .text-wrapper {
+        justify-self: center;
+        align-self: center;
+        padding: 0em 0em 0em 3.5em;
+        gap: 8em;
+        
+    }
+
+    .text-wrapper div {
+        padding: 3.4em;
+    }
+    .image1{
+        background-image: url(../assets/Rectangle\ 1.png);
+    }
+
+    .border1,
+    .border2,
+    .border3 {
+        width: 1px;
+        height: 120vh;
+        border-left: solid 1px #CCAB99;
+        grid-column: 1/1;
+        grid-row: 1;
+        margin-top: -25vh;
+        z-index: -1;
+    }
+
+    .border2 {
+        grid-column: 2/2;
+        margin-left: -2.5px;
+    }
+
+    .border3 {
+        grid-column: 3/3;
+        height: 75vh;
+        margin-left: -2.5px;
+    }
+
+}
