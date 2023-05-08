@@ -193,6 +193,8 @@ nav.secondary-nav ul li a {
         display: flex;
         justify-content: space-between;
         gap: 3em;
+        margin: 0;
+        padding: 6.6em;
     }
     section.hero {
         text-align: left;
