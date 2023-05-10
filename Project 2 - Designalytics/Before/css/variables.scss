@@ -1,48 +1,8 @@
-// Breakpoints
-$breakpoint-xs: 320px;
-$breakpoint-sm: 576px;
-$breakpoint-md: 768px;
-$breakpoint-lg: 992px;
-$breakpoint-xl: 1200px;
+:root {
+    --primary-color: #5e85f8;
+    --secondary-color: #292B31;
+    --link-color: #BAC2D9;
+    --border-color: #464A56;
+    --inner-panel-color: #32343C;
 
-// Colors
-$primary-color: #007bff;
-$secondary-color: #6c757d;
-$success-color: #28a745;
-$danger-color: #dc3545;
-$info-color: #17a2b8;
-$warning-color: #ffc107;
-$light-color: #f8f9fa;
-$dark-color: #343a40;
-$white-color: #ffffff;
-$black-color: #000000;
-
-// Typography
-$font-family-base: 'Roboto', sans-serif;
-$font-size-base: 1rem; // 16px
-$font-weight-light: 300;
-$font-weight-regular: 400;
-$font-weight-bold: 700;
-
-// Spacing
-$spacer: 1rem;
-$spacer-xs: $spacer * 0.25;
-$spacer-sm: $spacer * 0.5;
-$spacer-md: $spacer;
-$spacer-lg: $spacer * 1.5;
-$spacer-xl: $spacer * 2;
-
-// Border
-$border-width: 1px;
-$border-radius: 0.25rem;
-$border-color: rgba($black-color, 0.125);
-
-// Z-index
-$zindex-dropdown: 1000;
-$zindex-sticky: 1020;
-$zindex-fixed: 1030;
-$zindex-modal-backdrop: 1040;
-$zindex-modal: 1050;
-$zindex-popover: 1060;
-$zindex-tooltip: 1070;
- 
+}
